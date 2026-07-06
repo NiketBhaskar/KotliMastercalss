@@ -1,7 +1,6 @@
-class Assisteant {
-    var name: String = ""
+class Assisteant(val name: String) {
 
-    fun bringCoffee(count: Int, name: String){
+    fun bringCoffee(name: String): String{
         repeat(3){
             println("$name get up")
             println("$name GTTCM")
@@ -12,6 +11,7 @@ class Assisteant {
             println("$name PCOTT")
             println("$name RTTW")
         }
+        return name
     }
 
 }
