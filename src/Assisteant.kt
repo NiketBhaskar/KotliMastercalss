@@ -13,5 +13,4 @@ class Assisteant(val name: String) {
         }
         return name
     }
-
 }
