@@ -1,4 +1,6 @@
-class Assisteant(val name: String) {
+package corporation
+
+class Assisteant(name: String, age: Int = 0): Worker(name, age) {
 
     fun bringCoffee(name: String): String{
         repeat(3){
