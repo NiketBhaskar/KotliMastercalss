@@ -2,8 +2,12 @@ package corporation
 
 fun main(){
     val director = Director("Andrey", 25)
-    //    val assistance: corporation.Assisteant = corporation.Assisteant("Helen")
-    //    director.takeCoffee(assistance)
-    val consultant = Consultant("Max")
-    director.getConsultantToWork(consultant)
+    val consultant= Consultant("Max")
+    val assisteant = Assisteant("Helen", 20)
+    val accountant = Accountant("Chri", 30)
+    val employees = listOf<Worker>(director, consultant, assisteant, accountant)
+    for(employee in employees){
+        employee.work()
+    }
+
 }
