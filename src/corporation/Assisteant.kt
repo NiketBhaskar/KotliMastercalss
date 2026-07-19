@@ -1,7 +1,9 @@
 package corporation
 
 class Assisteant(name: String, age: Int = 0): Worker(name, age) {
-
+    override fun work(){
+        println("I am assisting")
+    }
     fun bringCoffee(name: String): String{
         repeat(3){
             println("$name get up")
